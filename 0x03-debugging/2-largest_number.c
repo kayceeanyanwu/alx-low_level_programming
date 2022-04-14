@@ -1,19 +1,29 @@
-#include <stdio.h>
+#include "holberton.h"
 
-int main() {
-  int counter = 0, number = 0, largest = 0;
+/**
+ * largest_number - returns the largest of 3 numbers
+ * @a: first integer
+ * @b: second integer
+ * @c: third integer
+ * Return: largest number
+ */
 
-  while ( counter < 10 ) {
-    printf( "Enter a number: \n" );
-    scanf( "%d", &number );
+int largest_number(int a, int b, int c)
+{
+	int largest;
 
-    if ( number >= largest ) {
-      largest = number;
-    }
-    counter++;
-  }
+	if (a >= b && a > c)
+	{
+		largest = a;
+	}
+	else if (b >= a && b > c)
+	{
+		largest = b;
+	}
+	else
+	{
+		largest = c;
+	}
 
-  printf( "The largest number is %d\n", largest );
-
-  return 0;
+	return (largest);
 }
