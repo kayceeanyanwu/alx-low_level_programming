@@ -1,14 +1,19 @@
 #include <stdio.h>
-int main()
-{
-      float a, b, c;
-      printf("Enter three numbers: ");
-      scanf("%f %f %f", &a, &b, &c);
-      if(a>=b && a>=c)
-         printf("Largest number = %.2f", a);
-      else if(b>=a && b>=c)
-         printf("Largest number = %.2f", b);
-      else
-         printf("Largest number = %.2f", c);
-      return 0;
+
+int main() {
+  int counter = 0, number = 0, largest = 0;
+
+  while ( counter < 10 ) {
+    printf( "Enter a number: \n" );
+    scanf( "%d", &number );
+
+    if ( number >= largest ) {
+      largest = number;
+    }
+    counter++;
+  }
+
+  printf( "The largest number is %d\n", largest );
+
+  return 0;
 }
