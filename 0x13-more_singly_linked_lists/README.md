@@ -32,4 +32,4 @@ Filename Description
 
 102-free_listint_safe.c - Frees a listint_t list
 
-103-find_loop.c - Finds the loop in a linked lists
+103-find_loop.c - Finds the loop in a linked listss
